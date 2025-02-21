@@ -18,7 +18,7 @@ function App() {
   const handleSubmit = async () => {
     try {
       const parsedInput = JSON.parse(input);
-      const res = await axios.post("https://bajaj-fin-y3o5.onrender.com/", parsedInput);
+      const res = await axios.post("https://bajaj-fin-y3o5.onrender.com/bfhl", parsedInput);
       setResponse(res.data);
       setError(null);
     } catch (err) {
